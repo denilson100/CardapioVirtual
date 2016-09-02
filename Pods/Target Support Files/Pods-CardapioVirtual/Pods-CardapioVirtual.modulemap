@@ -1,0 +1,6 @@
+framework module Pods_CardapioVirtual {
+  umbrella header "Pods-CardapioVirtual-umbrella.h"
+
+  export *
+  module * { export * }
+}

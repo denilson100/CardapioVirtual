@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B5C6A6019C42BE708380A96 /* Pods_CardapioVirtual.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6FF7F36C02C4AB615697F9 /* Pods_CardapioVirtual.framework */; };
 		D8FB09DA1D79C866005970C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB09D91D79C866005970C0 /* AppDelegate.swift */; };
 		D8FB09DC1D79C866005970C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB09DB1D79C866005970C0 /* ViewController.swift */; };
 		D8FB09DF1D79C866005970C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FB09DD1D79C866005970C0 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8845CBF048EAE3EE7C2F4663 /* Pods-CardapioVirtual.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardapioVirtual.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardapioVirtual/Pods-CardapioVirtual.release.xcconfig"; sourceTree = "<group>"; };
+		90A1EC0AE895D493C41F3D8D /* Pods-CardapioVirtual.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardapioVirtual.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardapioVirtual/Pods-CardapioVirtual.debug.xcconfig"; sourceTree = "<group>"; };
+		AF6FF7F36C02C4AB615697F9 /* Pods_CardapioVirtual.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardapioVirtual.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FB09D61D79C866005970C0 /* CardapioVirtual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardapioVirtual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FB09D91D79C866005970C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8FB09DB1D79C866005970C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B5C6A6019C42BE708380A96 /* Pods_CardapioVirtual.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		362AE3E4B9B36202C19ED735 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90A1EC0AE895D493C41F3D8D /* Pods-CardapioVirtual.debug.xcconfig */,
+				8845CBF048EAE3EE7C2F4663 /* Pods-CardapioVirtual.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E81CE32C24A6C4144B3BB5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF6FF7F36C02C4AB615697F9 /* Pods_CardapioVirtual.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D8FB09CD1D79C865005970C0 = {
 			isa = PBXGroup;
 			children = (
 				D8FB09D81D79C866005970C0 /* CardapioVirtual */,
 				D8FB09D71D79C866005970C0 /* Products */,
+				362AE3E4B9B36202C19ED735 /* Pods */,
+				8E81CE32C24A6C4144B3BB5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8FB09E81D79C866005970C0 /* Build configuration list for PBXNativeTarget "CardapioVirtual" */;
 			buildPhases = (
+				0E7BBF0BFB005547A948FE97 /* [CP] Check Pods Manifest.lock */,
 				D8FB09D21D79C866005970C0 /* Sources */,
 				D8FB09D31D79C866005970C0 /* Frameworks */,
 				D8FB09D41D79C866005970C0 /* Resources */,
+				E3CD2D0E0A4C6C45F8490C27 /* [CP] Embed Pods Frameworks */,
+				631EF6C16604847E7AEE0F00 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E7BBF0BFB005547A948FE97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		631EF6C16604847E7AEE0F00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardapioVirtual/Pods-CardapioVirtual-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3CD2D0E0A4C6C45F8490C27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CardapioVirtual/Pods-CardapioVirtual-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D8FB09D21D79C866005970C0 /* Sources */ = {
@@ -249,6 +324,7 @@
 		};
 		D8FB09E91D79C866005970C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90A1EC0AE895D493C41F3D8D /* Pods-CardapioVirtual.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CardapioVirtual/Info.plist;
@@ -260,6 +336,7 @@
 		};
 		D8FB09EA1D79C866005970C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8845CBF048EAE3EE7C2F4663 /* Pods-CardapioVirtual.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CardapioVirtual/Info.plist;
@@ -288,6 +365,7 @@
 				D8FB09EA1D79C866005970C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
