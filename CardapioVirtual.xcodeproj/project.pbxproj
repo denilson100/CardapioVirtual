@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B5C6A6019C42BE708380A96 /* Pods_CardapioVirtual.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6FF7F36C02C4AB615697F9 /* Pods_CardapioVirtual.framework */; };
+		17434192CAB23A866B774F65 /* Pods_CardapioVirtual.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6E75B1578E0295C1C5F3BA /* Pods_CardapioVirtual.framework */; };
 		D8FB09DA1D79C866005970C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB09D91D79C866005970C0 /* AppDelegate.swift */; };
 		D8FB09DC1D79C866005970C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB09DB1D79C866005970C0 /* ViewController.swift */; };
 		D8FB09DF1D79C866005970C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FB09DD1D79C866005970C0 /* Main.storyboard */; };
 		D8FB09E11D79C866005970C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FB09E01D79C866005970C0 /* Assets.xcassets */; };
 		D8FB09E41D79C866005970C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FB09E21D79C866005970C0 /* LaunchScreen.storyboard */; };
+		D8FB09F51D79E3FE005970C0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FB09EB1D79E142005970C0 /* FBSDKCoreKit.framework */; };
+		D8FB09F61D79E40B005970C0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FB09ED1D79E152005970C0 /* FBSDKLoginKit.framework */; };
+		D8FB09F81D79E710005970C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FB09F71D79E710005970C0 /* UIKit.framework */; };
+		D8FB09FB1D79E911005970C0 /* CustomTokenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB09FA1D79E911005970C0 /* CustomTokenViewController.swift */; };
+		D8FB09FD1D79E930005970C0 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB09FC1D79E930005970C0 /* EmailViewController.swift */; };
+		D8FB09FF1D79E94F005970C0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB09FE1D79E94F005970C0 /* MainViewController.swift */; };
+		D8FB0A041D79EB4D005970C0 /* UIViewController+Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FB0A031D79EB4D005970C0 /* UIViewController+Alerts.m */; };
+		D8FB0A061D79EC9D005970C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8FB0A051D79EC9D005970C0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C6E75B1578E0295C1C5F3BA /* Pods_CardapioVirtual.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardapioVirtual.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8845CBF048EAE3EE7C2F4663 /* Pods-CardapioVirtual.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardapioVirtual.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardapioVirtual/Pods-CardapioVirtual.release.xcconfig"; sourceTree = "<group>"; };
 		90A1EC0AE895D493C41F3D8D /* Pods-CardapioVirtual.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardapioVirtual.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardapioVirtual/Pods-CardapioVirtual.debug.xcconfig"; sourceTree = "<group>"; };
-		AF6FF7F36C02C4AB615697F9 /* Pods_CardapioVirtual.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardapioVirtual.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FB09D61D79C866005970C0 /* CardapioVirtual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardapioVirtual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FB09D91D79C866005970C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8FB09DB1D79C866005970C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +34,16 @@
 		D8FB09E01D79C866005970C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8FB09E31D79C866005970C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8FB09E51D79C866005970C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8FB09EB1D79E142005970C0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../../Downloads/FacebookSDKs-iOS-4.12.0/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		D8FB09ED1D79E152005970C0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../../Downloads/FacebookSDKs-iOS-4.12.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		D8FB09F71D79E710005970C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D8FB09FA1D79E911005970C0 /* CustomTokenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTokenViewController.swift; sourceTree = "<group>"; };
+		D8FB09FC1D79E930005970C0 /* EmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
+		D8FB09FE1D79E94F005970C0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D8FB0A011D79EB46005970C0 /* CardapioVirtual-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CardapioVirtual-Bridging-Header.h"; sourceTree = "<group>"; };
+		D8FB0A021D79EB4D005970C0 /* UIViewController+Alerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Alerts.h"; path = "../../firebase/quickstart-ios/authentication/AuthenticationExample/UIViewController+Alerts.h"; sourceTree = "<group>"; };
+		D8FB0A031D79EB4D005970C0 /* UIViewController+Alerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Alerts.m"; path = "../../firebase/quickstart-ios/authentication/AuthenticationExample/UIViewController+Alerts.m"; sourceTree = "<group>"; };
+		D8FB0A051D79EC9D005970C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +51,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B5C6A6019C42BE708380A96 /* Pods_CardapioVirtual.framework in Frameworks */,
+				D8FB09F81D79E710005970C0 /* UIKit.framework in Frameworks */,
+				D8FB09F51D79E3FE005970C0 /* FBSDKCoreKit.framework in Frameworks */,
+				D8FB09F61D79E40B005970C0 /* FBSDKLoginKit.framework in Frameworks */,
+				17434192CAB23A866B774F65 /* Pods_CardapioVirtual.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +73,10 @@
 		8E81CE32C24A6C4144B3BB5E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AF6FF7F36C02C4AB615697F9 /* Pods_CardapioVirtual.framework */,
+				D8FB09F71D79E710005970C0 /* UIKit.framework */,
+				D8FB09ED1D79E152005970C0 /* FBSDKLoginKit.framework */,
+				D8FB09EB1D79E142005970C0 /* FBSDKCoreKit.framework */,
+				3C6E75B1578E0295C1C5F3BA /* Pods_CardapioVirtual.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -78,14 +102,37 @@
 		D8FB09D81D79C866005970C0 /* CardapioVirtual */ = {
 			isa = PBXGroup;
 			children = (
-				D8FB09D91D79C866005970C0 /* AppDelegate.swift */,
+				D8FB09F91D79E8CD005970C0 /* Authentication */,
 				D8FB09DB1D79C866005970C0 /* ViewController.swift */,
 				D8FB09DD1D79C866005970C0 /* Main.storyboard */,
 				D8FB09E01D79C866005970C0 /* Assets.xcassets */,
 				D8FB09E21D79C866005970C0 /* LaunchScreen.storyboard */,
+				D8FB0A051D79EC9D005970C0 /* GoogleService-Info.plist */,
 				D8FB09E51D79C866005970C0 /* Info.plist */,
 			);
 			path = CardapioVirtual;
+			sourceTree = "<group>";
+		};
+		D8FB09F91D79E8CD005970C0 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				D8FB0A001D79EAF5005970C0 /* Supporting Files */,
+				D8FB09FA1D79E911005970C0 /* CustomTokenViewController.swift */,
+				D8FB09FC1D79E930005970C0 /* EmailViewController.swift */,
+				D8FB09FE1D79E94F005970C0 /* MainViewController.swift */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		D8FB0A001D79EAF5005970C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8FB09D91D79C866005970C0 /* AppDelegate.swift */,
+				D8FB0A021D79EB4D005970C0 /* UIViewController+Alerts.h */,
+				D8FB0A031D79EB4D005970C0 /* UIViewController+Alerts.m */,
+				D8FB0A011D79EB46005970C0 /* CardapioVirtual-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8FB09E41D79C866005970C0 /* LaunchScreen.storyboard in Resources */,
+				D8FB0A061D79EC9D005970C0 /* GoogleService-Info.plist in Resources */,
 				D8FB09E11D79C866005970C0 /* Assets.xcassets in Resources */,
 				D8FB09DF1D79C866005970C0 /* Main.storyboard in Resources */,
 			);
@@ -212,6 +260,10 @@
 			files = (
 				D8FB09DC1D79C866005970C0 /* ViewController.swift in Sources */,
 				D8FB09DA1D79C866005970C0 /* AppDelegate.swift in Sources */,
+				D8FB09FB1D79E911005970C0 /* CustomTokenViewController.swift in Sources */,
+				D8FB0A041D79EB4D005970C0 /* UIViewController+Alerts.m in Sources */,
+				D8FB09FD1D79E930005970C0 /* EmailViewController.swift in Sources */,
+				D8FB09FF1D79E94F005970C0 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,10 +379,13 @@
 			baseConfigurationReference = 90A1EC0AE895D493C41F3D8D /* Pods-CardapioVirtual.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CardapioVirtual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.mobile10.CardapioVirtual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CardapioVirtual/CardapioVirtual-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -339,10 +394,12 @@
 			baseConfigurationReference = 8845CBF048EAE3EE7C2F4663 /* Pods-CardapioVirtual.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CardapioVirtual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.mobile10.CardapioVirtual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CardapioVirtual/CardapioVirtual-Bridging-Header.h";
 			};
 			name = Release;
 		};

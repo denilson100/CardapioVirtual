@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "511F94A7D9F0CA5408F32D8BFCA31AD3F7489981",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "511F94A7D9F0CA5408F32D8BFCA31AD3F7489981" : 0,
+    "1D6C4B0CDA432C26F61820015BA1267F8DE1D49B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "24A79F11-4380-4859-8B2E-A2BD6ADC0B53",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "511F94A7D9F0CA5408F32D8BFCA31AD3F7489981" : "CardapioVirtual\/",
+    "1D6C4B0CDA432C26F61820015BA1267F8DE1D49B" : "firebase\/quickstart-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CardapioVirtual",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CardapioVirtual.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/firebase\/quickstart-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1D6C4B0CDA432C26F61820015BA1267F8DE1D49B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/denilson100\/CardapioVirtual.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "511F94A7D9F0CA5408F32D8BFCA31AD3F7489981"
+    }
+  ]
+}
