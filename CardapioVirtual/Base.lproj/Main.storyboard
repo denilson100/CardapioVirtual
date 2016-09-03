@@ -9,10 +9,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Usar device como:-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CardapioVirtual" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Usar device como:" id="BYZ-38-t0r" customClass="ViewController" customModule="CardapioVirtual" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,13 +20,84 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tA6-57-fj1">
+                                <rect key="frame" x="16" y="64" width="288" height="504"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="psg-kG-6z9">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="168"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiK-mn-3vu">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="168"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Cardápio Virtual"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="eiK-mn-3vu" firstAttribute="leading" secondItem="psg-kG-6z9" secondAttribute="leading" id="EUR-RL-ubv"/>
+                                            <constraint firstAttribute="bottom" secondItem="eiK-mn-3vu" secondAttribute="bottom" id="MXz-m3-aXA"/>
+                                            <constraint firstItem="eiK-mn-3vu" firstAttribute="centerX" secondItem="psg-kG-6z9" secondAttribute="centerX" id="QQT-Fc-iJS"/>
+                                            <constraint firstAttribute="trailing" secondItem="eiK-mn-3vu" secondAttribute="trailing" id="VjP-bD-gzS"/>
+                                            <constraint firstItem="eiK-mn-3vu" firstAttribute="top" secondItem="psg-kG-6z9" secondAttribute="top" id="YO0-l8-N0u"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kot-PZ-1eV">
+                                        <rect key="frame" x="0.0" y="168" width="288" height="168"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0M-Yk-AUp">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="168"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Pedidos"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="v0M-Yk-AUp" firstAttribute="leading" secondItem="Kot-PZ-1eV" secondAttribute="leading" id="7qg-U9-Cy0"/>
+                                            <constraint firstAttribute="bottom" secondItem="v0M-Yk-AUp" secondAttribute="bottom" id="8oK-mE-T7P"/>
+                                            <constraint firstItem="v0M-Yk-AUp" firstAttribute="top" secondItem="Kot-PZ-1eV" secondAttribute="top" id="Pmx-wH-CXz"/>
+                                            <constraint firstAttribute="trailing" secondItem="v0M-Yk-AUp" secondAttribute="trailing" id="Wv8-Gt-aJL"/>
+                                            <constraint firstItem="v0M-Yk-AUp" firstAttribute="centerX" secondItem="Kot-PZ-1eV" secondAttribute="centerX" id="lm3-nI-vou"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PZY-tb-1ob">
+                                        <rect key="frame" x="0.0" y="336" width="288" height="168"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djn-w5-SxA">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="168"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <state key="normal" title="Gerenciamento"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="djn-w5-SxA" firstAttribute="leading" secondItem="PZY-tb-1ob" secondAttribute="leading" id="Bia-qH-zfm"/>
+                                            <constraint firstItem="djn-w5-SxA" firstAttribute="top" secondItem="PZY-tb-1ob" secondAttribute="top" id="e7m-gc-faH"/>
+                                            <constraint firstItem="djn-w5-SxA" firstAttribute="centerX" secondItem="PZY-tb-1ob" secondAttribute="centerX" id="g5v-I8-irf"/>
+                                            <constraint firstAttribute="trailing" secondItem="djn-w5-SxA" secondAttribute="trailing" id="qLr-SN-GOG"/>
+                                            <constraint firstAttribute="bottom" secondItem="djn-w5-SxA" secondAttribute="bottom" id="uGZ-3A-Jh1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="tA6-57-fj1" secondAttribute="trailing" id="3r3-mO-QVZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tA6-57-fj1" secondAttribute="bottom" id="8be-lh-jlR"/>
+                            <constraint firstItem="tA6-57-fj1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8dz-xx-Yz5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tA6-57-fj1" secondAttribute="trailing" id="C5N-gn-1ge"/>
+                            <constraint firstItem="tA6-57-fj1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="eMS-Kz-WBv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tA6-57-fj1" secondAttribute="bottom" id="eMj-4I-oFg"/>
+                            <constraint firstItem="tA6-57-fj1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lKV-5V-KVS"/>
+                            <constraint firstItem="tA6-57-fj1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wcI-Mp-h04"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="-800"/>
+            <point key="canvasLocation" x="1170" y="-800"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="abU-TI-oJp">
@@ -36,6 +107,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vk3-wi-rXt">
+                            <rect key="frame" x="0.0" y="497" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="MqH-Ke-gab"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SignIn" id="0rl-6B-1F3">
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
@@ -451,10 +530,11 @@
             </objects>
             <point key="canvasLocation" x="1956" y="-1848"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Autenticação-->
         <scene sceneID="gP8-p9-xl8">
             <objects>
-                <navigationController id="vj2-Ze-uaO" sceneMemberID="viewController">
+                <navigationController title="Autenticação" id="vj2-Ze-uaO" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5oi-4w-dWe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
